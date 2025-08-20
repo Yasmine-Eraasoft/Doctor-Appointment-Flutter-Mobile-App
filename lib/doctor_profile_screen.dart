@@ -11,23 +11,15 @@ class DoctorProfileScreen extends StatelessWidget {
           onPressed: () {},
         ),
         backgroundColor: Color.fromRGBO(38, 94, 215, 1),
-        flexibleSpace: SafeArea(
-          child: Stack(
-            children: [
-              Align(
-                alignment: Alignment.center,
-                child: Text(
-                  "Doctor Profile",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ],
+        title: Text(
+          "Doctor Profile",
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
           ),
         ),
+        centerTitle: true,
       ),
       body: Padding(
         padding: EdgeInsets.fromLTRB(16, 36, 16, 16),
